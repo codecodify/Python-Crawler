@@ -1,0 +1,7 @@
+使用python采集快递信息，官方为http://www.kuaidi100.com/
+
+直接在命令行中运行，如 python ./express.py 圆通 123456
+
+查询快递有两个参数，一个是快递标识，一个是单号
+快递标识需要另外获取，地址为 https://www.kuaidi100.com/company.do?method=js，我使用了正则提取
+另外使用了prettytable库， 主要用于格式化信息打印工具，能让你像 MySQL 那样打印数据
